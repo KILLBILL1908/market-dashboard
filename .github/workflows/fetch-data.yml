@@ -2,8 +2,10 @@ name: Fetch Market Data
 
 on:
   schedule:
-    - cron: '0 22 * * 1-5'
-  workflow_dispatch:
+    - cron: '0 6 * * 1-5'   # 07:00 BST / 06:00 GMT — Mon–Fri morning
+    - cron: '30 14 * * 1-5' # 15:30 BST — US market open
+    - cron: '0 21 * * 1-5'  # 22:00 BST — US market close
+  workflow_dispatch:          # keep this for manual run
 
 permissions:
   contents: write
