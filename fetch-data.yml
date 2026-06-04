@@ -1,4 +1,4 @@
-name: Fetch Market Data
+name: .github/workflows/fetch-data.yml
 
 on:
   schedule:
